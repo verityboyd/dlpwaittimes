@@ -1,36 +1,13 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Disneyland Paris Wait Times
 
-## Getting Started
+## API, useState and useEffect Practice
 
-First, run the development server:
+- This project allowed me to practice fetching data using an API. The API I chose was from queue-times.com (thank you!). I used .map to show each land in the park along with its rides and wait times. If the wait time is 0, it shows as the ride being closed. When a ride is open, the lowest a wait time can go is 5 minutes (or 13 for Phantom Manor).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- This was a really fun and entertaining project. Although the output is simple, it helped solidify core concepts like state, effect and async functions for me. I also experimented with styling and enjoyed playing around with colour, gradient and even some icons.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- In future, I would like to expand on this project with more comprehensive filtering or added sorting. A fun improvement might be to be able to sort by lowest to highest wait time, or even have multiple Disney Parks from across the world to filter by.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## License
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the [MIT License](LICENSE).
