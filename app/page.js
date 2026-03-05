@@ -61,7 +61,7 @@ export default function Page() {
           ))}
         </select>
       </div>
-      <div className="w-150 m-5 px-8 py-5 rounded-2xl bg-gradient-to-r from-violet-200 to-pink-200">
+      <div className="w-150 m-5 px-8 py-5 rounded-2xl bg-linear-to-r from-violet-200 to-pink-200">
         {displayedLands.map((land) => (
           <div key={land.id}>
             <div className="flex flex-row items-center">
