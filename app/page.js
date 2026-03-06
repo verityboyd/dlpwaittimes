@@ -42,11 +42,11 @@ export default function Page() {
       : rides.filter((land) => land.name === filterByLand);
 
   return (
-    <main className="flex flex-col justify-center items-center">
+    <main className="flex flex-col justify-center items-center px-4">
       <header className="py-10 text-3xl font-bold text-pink-600">
-        <h1>Disneyland Paris Wait Times</h1>
+        <h1 className="text-center">Disneyland Paris Wait Times</h1>
       </header>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center w-full">
         <div className="font-semibold pb-2">Filter By Land:</div>
         <select
           value={filterByLand}
@@ -61,7 +61,7 @@ export default function Page() {
           ))}
         </select>
       </div>
-      <div className="w-150 m-5 px-8 py-5 rounded-2xl bg-linear-to-r from-violet-200 to-pink-200">
+      <div className="w-full md:w-150 m-5 px-8 py-5 rounded-2xl bg-linear-to-r from-violet-200 to-pink-200">
         {displayedLands.map((land) => (
           <div key={land.id}>
             <div className="flex flex-row items-center">
