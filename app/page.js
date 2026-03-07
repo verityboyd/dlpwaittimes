@@ -10,12 +10,11 @@ export default function Page() {
 
   async function fetchRides() {
     try {
-      const response = await fetch("/api/queue"); //go get me the cheesies
+      const response = await fetch("/api/queue");
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
-      const data = await response.json(); //when you come back with the cheesies, put them in a bowl for me
-      //console.log(data.lands[1].rides);
+      const data = await response.json();
       setRides(data.lands);
     } catch (error) {
       setError(error.message);
